@@ -13,9 +13,9 @@ The goal of unsupervised to find hidden structure in data while reinforcement
 learning tries to maximize a reward signal. Uncovering structure in an agent’s experience can certainly be useful in reinforcement learning, but by itself does not address the reinforcement learning agent’s problem of maximizing a reward signal.
 
 ## Exploration vs Exploitation
-**Exploit:** Take actions that it already knows are good
-**Explore:** Take actions that it hasn't taken before
-**Thoughts:** Regarding Exploration, maybe there is a way to infer or rank possible good actions
+**Exploit:** Take actions that it already knows are good  
+**Explore:** Take actions that it hasn't taken before  
+**Thoughts:** Regarding Exploration, maybe there is a way to infer or rank possible good actions  
 instead of randomly choosing one?
 
 ## Elements of Reinforcement Learning
