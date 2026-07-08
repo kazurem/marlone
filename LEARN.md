@@ -55,7 +55,7 @@ Something which mimics the environment. It is what the agent think how the envir
 to actions. The better the model, the better it's predictions/estimations. This component is 
 necessary for planning.  
 **Model-Free** => Explicitly Trial and Error Agents (Opposite of planning)  
-**Model-Based **=> Use models rather than pure trial and error
+**Model-Based**=> Use models rather than pure trial and error
 
 ### Limitations and Scope
 Algorithms which don't do value estimation:  
