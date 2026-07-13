@@ -10,6 +10,7 @@ The Drone Swarm will also be only 2D for now but I plan on extending this projec
 
 ## Notebooks
 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kazurem/marlone/blob/environment/BasicVMASEnv.ipynb) **Basic Custom Scenario in VMAS**. Here is a notebook which implements a custom scenario using [VMAS's](https://github.com/proroklab/vectorizedmultiagentsimulator) `BaseScenario` class. It includes multiple agents (in blue) and obstacles (in red). There is also a 2D vector field which is supposed to represent wind. The actions the agents take are random for now.
+![WindNavScenario](assets/WindNavScenario.gif)
   
 ## What is Multi-Agent Reinforcement Learning
 From [Wikipedia: Multi-Agent reinforcement learning](https://en.wikipedia.org/wiki/Multi-agent_reinforcement_learning):
