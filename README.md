@@ -8,6 +8,9 @@ Training a Drone Swarm for various purposes such as:
 For now, only the searching part will be implemented. This will be done using Multi-Agent Reinforcement Learning.
 The Drone Swarm will also be only 2D for now but I plan on extending this project for 3D as well.
 
+## Notebooks
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kazurem/marlone/blob/environment/BasicVMASEnv.ipynb) **Basic Custom Scenario in VMAS**. Here is a notebook which implements a custom scenario using [VMAS's](https://github.com/proroklab/vectorizedmultiagentsimulator) `BaseScenario` class. It includes multiple agents (in blue) and obstacles (in red). There is also a 2D vector field which is supposed to represent wind. The actions the agents take are random for now.
+  
 ## What is Multi-Agent Reinforcement Learning
 From [Wikipedia: Multi-Agent reinforcement learning](https://en.wikipedia.org/wiki/Multi-agent_reinforcement_learning):
 > Study of behavior of multiple learning agents that coexist in a shared environment.
@@ -16,11 +19,4 @@ in some environments these interests are opposed to the interests of other agent
 Can be modeled by a Markov Decision Process
 
 # Resources
-1. [Wikipedia: Multi-Agent reinforcement learning](https://en.wikipedia.org/wiki/Multi-agent_reinforcement_learning)
-2. Reinforcement Learning: An Introduction By Richard S. Sutton and Andrew G. Barto
-3. [Wikipedia: Markov Decision Process](https://en.wikipedia.org/wiki/Markov_decision_process)
-4. [Library for MARL: PettingZoo](https://pettingzoo.farama.org/)
-5. [arXiv: Multi-agent Reinforcement Learning: A Comprehensive Survey](https://arxiv.org/pdf/2312.10256)
-6. [Wikipedia: Game Theory](https://en.wikipedia.org/wiki/Game_theory)
-7. [arXiv: Deep Reinforcement Learning for Swarm Systems](https://arxiv.org/pdf/1807.06613)
-8. [Github: MARL Papers](https://github.com/LantaoYu/MARL-Papers)
+Please see the [Github Wiki Page](https://github.com/kazurem/marlone/wiki/Resources)
