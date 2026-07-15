@@ -34,7 +34,7 @@ The environment is continuous, dynamic and stochastic.
 3. Communication hindrance caused by obstacles between drones.
 
 ## Notebooks
-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kazurem/marlone/blob/environment/BasicVMASEnv.ipynb) **Basic Custom Scenario in VMAS**. Here is a notebook which implements a custom scenario using [VMAS's](https://github.com/proroklab/vectorizedmultiagentsimulator) `BaseScenario` class. It includes multiple agents (in blue), obstacles (in red) and a target (in green). The black lines around the agents are lidar sensor lines. There is also a 2D vector field which is supposed to represent wind though it has not been rendered. The actions the agents take are random for now.
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kazurem/marlone/blob/environment/BasicVMASEnv.ipynb) **Basic Custom Scenario in VMAS**. Here is a notebook which implements a custom scenario using [VMAS's](https://github.com/proroklab/vectorizedmultiagentsimulator) `BaseScenario` class. It includes multiple agents (in blue), obstacles (in red) and a target (in green). The black lines around the agents are lidar sensor lines. The black lines across the map represent wind. Notice that after 1-2 seconds, the drones acting on their own, which represent the battery being drained. After full drainage of battery, they get guided by the wind. The actions the agents take are random for now.
 ![WindNavScenario](assets/WindNavScenario.gif)
   
 ## What is Multi-Agent Reinforcement Learning
