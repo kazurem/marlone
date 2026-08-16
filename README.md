@@ -24,15 +24,24 @@ The environment is continuous, dynamic and stochastic.
 ### Sensors
 - LIDAR
 - Ability to receive messages from other drones.
+- Battery sensor
+- Wind sensor
 
 > [!NOTE]  
 > Inter-agent communication is support natively by [VMAS](https://github.com/proroklab/vectorizedmultiagentsimulator) so we won't have to deal with personally handling the sending and receiving messages between drones.
 
 ## Possible Future Extensions
 1. Uncertainty in observations made by drones.
-2. Moving obstacles.
+2. Moving obstacles.</video>
 3. Communication hindrance caused by obstacles between drones.
 
+## Progress Report: 16 August, 2026
+This project turned out to be more difficult than I had first estimated. For now, I have moved from constrained target search to navigation towards known target while avoiding obstacle, which I have achieved partial success in. There are still situations where the agents perform suboptimally and sometimes completely fail. This can be credited to bad reward function design on my part.
+
+## Notebooks
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kazurem/marlone/blob/environment/BasicVMASEnv.ipynb) **Basic Custom Scenario in VMAS**. Here is a notebook which implements a custom scenario using [VMAS's](https://github.com/proroklab/vectorizedmultiagentsimulator) `BaseScenario` class. It includes multiple agents (in blue), obstacles (in red) and a goal (in green). The agents were trained using the [MAPPO Algorithm](https://www.emergentmind.com/topics/multi-agent-proximal-policy-optimization-mappo). As can be seen, there are still situations where agents gets stuck and are unable to get out. This is most probably due to bad reward function design. The full run can be found here [output](https://www.kaggle.com/code/mutahir314/navigation/output).
+![WindNavScenario](assets/WindNavScenario.gif)
+  
 ## What is Multi-Agent Reinforcement Learning
 From [Wikipedia: Multi-Agent reinforcement learning](https://en.wikipedia.org/wiki/Multi-agent_reinforcement_learning):
 > Study of behavior of multiple learning agents that coexist in a shared environment.
@@ -41,11 +50,4 @@ in some environments these interests are opposed to the interests of other agent
 Can be modeled by a Markov Decision Process
 
 # Resources
-1. [Wikipedia: Multi-Agent reinforcement learning](https://en.wikipedia.org/wiki/Multi-agent_reinforcement_learning)
-2. Reinforcement Learning: An Introduction By Richard S. Sutton and Andrew G. Barto
-3. [Wikipedia: Markov Decision Process](https://en.wikipedia.org/wiki/Markov_decision_process)
-4. [Library for MARL: PettingZoo](https://pettingzoo.farama.org/)
-5. [arXiv: Multi-agent Reinforcement Learning: A Comprehensive Survey](https://arxiv.org/pdf/2312.10256)
-6. [Wikipedia: Game Theory](https://en.wikipedia.org/wiki/Game_theory)
-7. [arXiv: Deep Reinforcement Learning for Swarm Systems](https://arxiv.org/pdf/1807.06613)
-8. [Github: MARL Papers](https://github.com/LantaoYu/MARL-Papers)
+Please see the [Github Wiki Page](https://github.com/kazurem/marlone/wiki/Resources)
