@@ -24,6 +24,8 @@ The environment is continuous, dynamic and stochastic.
 ### Sensors
 - LIDAR
 - Ability to receive messages from other drones.
+- Battery sensor
+- Wind sensor
 
 > [!NOTE]  
 > Inter-agent communication is support natively by [VMAS](https://github.com/proroklab/vectorizedmultiagentsimulator) so we won't have to deal with personally handling the sending and receiving messages between drones.
@@ -33,8 +35,11 @@ The environment is continuous, dynamic and stochastic.
 2. Moving obstacles.</video>
 3. Communication hindrance caused by obstacles between drones.
 
+## Progress Report: 16 August, 2026
+This project turned out to be more difficult than I had first estimated. For now, I have moved from constrained target search to navigation towards known target while avoiding obstacle, which I have achieved partial success in. There are still situations where the agents perform suboptimally and sometimes completely fail. This can be credited to bad reward function design on my part.
+
 ## Notebooks
-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kazurem/marlone/blob/environment/BasicVMASEnv.ipynb) **Basic Custom Scenario in VMAS**. Here is a notebook which implements a custom scenario using [VMAS's](https://github.com/proroklab/vectorizedmultiagentsimulator) `BaseScenario` class. It includes multiple agents (in blue), obstacles (in red) and a target (in green). The black lines around the agents are lidar sensor lines. The black lines across the map represent wind. Notice that after 1-2 seconds, the drones acting on their own, which represent the battery being drained. After full drainage of battery, they get guided by the wind. The actions the agents take are random for now.
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kazurem/marlone/blob/environment/BasicVMASEnv.ipynb) **Basic Custom Scenario in VMAS**. Here is a notebook which implements a custom scenario using [VMAS's](https://github.com/proroklab/vectorizedmultiagentsimulator) `BaseScenario` class. It includes multiple agents (in blue), obstacles (in red) and a goal (in green). The agents were trained using the [MAPPO Algorithm](https://www.emergentmind.com/topics/multi-agent-proximal-policy-optimization-mappo). As can be seen, there are still situations where agents gets stuck and are unable to get out. This is most probably due to bad reward function design.
 ![WindNavScenario](assets/WindNavScenario.gif)
   
 ## What is Multi-Agent Reinforcement Learning
